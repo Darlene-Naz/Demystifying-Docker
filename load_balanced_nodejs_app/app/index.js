@@ -1,13 +1,15 @@
 const express = require("express");
-const path = require("path")
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3000; // For testing locally
 const SERVER_ID = process.env.SERVER_ID;
 
+app.use('/static', express.static(path.join(__dirname, 'static')))
+
 app.get("/", (req, res) => {
   // res.send({ server: SERVER_ID, port: PORT });
-  res.sendFile(path.join(__dirname, '/static/index.html'));
+  res.sendFile(path.join(__dirname, "/static/index.html"));
 });
 
 app.listen(PORT, function () {
