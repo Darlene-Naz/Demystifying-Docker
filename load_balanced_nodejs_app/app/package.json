@@ -7,7 +7,7 @@
     "start": "node .",
     "dev": "node ."
   },
-  "author": "Sowmen Rahman <sowmen.appd@gmail.com>",
+  "author": "Darlene, Rachel, Anup",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
