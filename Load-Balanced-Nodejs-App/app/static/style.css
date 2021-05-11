@@ -50,7 +50,7 @@ body {
     display: -ms-flexbox;
     display: block;
     position: absolute;
-    top: 50%;
+    top: 30%;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -86,4 +86,21 @@ body {
 
 .second:hover {
     background-position: 100px;
+}
+
+.print {
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    display: block;
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: black;
+    height: 15%;
 }
