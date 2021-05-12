@@ -40,7 +40,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: whitesmoke;
+    background-color: transparent;
     border: 2px solid #e74c3c;
     border-radius: 0.6em;
     color: #e74c3c;
@@ -92,15 +92,14 @@ body {
     margin: 20px;
     padding: 1.2em 2.8em;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1;
     display: block;
     position: absolute;
     top: 20%;
     color: #fff;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-family: 'Inconsolata';
     background-color: black;
     height: 15%;
 }

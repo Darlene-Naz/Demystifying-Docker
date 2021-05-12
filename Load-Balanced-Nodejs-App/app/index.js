@@ -11,7 +11,7 @@ app.use('/static', express.static(path.join(__dirname, 'static')))
 app.get("/", (req, res) => {
     console.log({ server: SERVER_ID, port: PORT });
     let file = fs.readFileSync(path.join(__dirname, "/static/index.html"), 'utf8');
-    file = file.replace('Darlene', '{ SERVER_ID: ' + SERVER_ID + ', PORT: ' + PORT + ' }');
+    file = file.replace('Darlene', '{ SERVER_ID: <span style="color:yellow">' + SERVER_ID + '</span>, PORT: <span style="color:yellow">' + PORT + '</span> }');
     res.send(file);
 });
 
