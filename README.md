@@ -2,8 +2,7 @@
 
 - [Getting Started with Docker, Dockerfile, Docker Compose](https://github.com/Darlene-Naz/Demystifying-Docker/tree/main/Getting-Started)
 
-- [A Secure, Highly Available, Dockerized app deployed on AWS](https://github.com/Darlene-Naz/Demystifying-Docker/tree/main/Load-Balanced-Nodejs-App)
-
+- [A Secure, Highly Available, Dockerized app deployed on AWS](https://github.com/Darlene-Naz/Demystifying-Docker/tree/main/Secure-Highly-Available-Dockerized-App)
 
 
 #### Security practices
