@@ -1,4 +1,4 @@
-FROM node
+FROM node:lts
 
 RUN mkdir -p /home/ec2-user/app/node_modules && chown -R node:node /home/ec2-user/app
 

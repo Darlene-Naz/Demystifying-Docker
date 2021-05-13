@@ -8,3 +8,4 @@
 #### Security practices
 
 - No new privileges rule. Always run your docker images with `--security-opt=no-new-privileges` in order to prevent escalate privileges using setuid or setgid binaries.
+- While running docker compose run as follows `docker-compose --log-level info up`. This ensures that detailed logs are not being given to the user

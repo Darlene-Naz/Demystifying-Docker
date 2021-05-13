@@ -6,6 +6,11 @@ services:
       context: ./app
       dockerfile: Dockerfile
     image: app
+    read_only: true
+    security_opt:
+      - label:user:testuser
+      - no-new-privileges:true
+    user: 1001:1001
   nginx-s:
     build:
       context: ./nginx
@@ -36,6 +41,7 @@ services:
     environment:
       - PORT=2000
       - SERVER_ID=${SERVER_ID}
+    read_only: true
   app3:
     image: app
     ports:
@@ -43,3 +49,4 @@ services:
     environment:
       - PORT=3000
       - SERVER_ID=${SERVER_ID}
+    read_only: true
