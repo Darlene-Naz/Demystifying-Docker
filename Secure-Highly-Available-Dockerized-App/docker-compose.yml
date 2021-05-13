@@ -28,18 +28,18 @@ services:
       - "1000:1000"
     environment:
       - PORT=1000
-      - SERVER_ID=1
+      - SERVER_ID=${SERVER_ID}
   app2:
     image: app
     ports:
       - "2000:2000"
     environment:
       - PORT=2000
-      - SERVER_ID=1
+      - SERVER_ID=${SERVER_ID}
   app3:
     image: app
     ports:
       - "3000:3000"
     environment:
       - PORT=3000
-      - SERVER_ID=1
+      - SERVER_ID=${SERVER_ID}
