@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curran's Face a Là Sol LeWitt - Getting it Right B&W Game</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="gstyle.css" />
+  </head>
+  <body>
+    <script src="engine.js"></script>
+    <script>
+      const svg = createSVGElement("svg");
+      svg.setAttribute("width", width);
+      svg.setAttribute("height", height);
+      document.body.appendChild(svg);
+
+      svg.appendChild(mask);
+      svg.appendChild(mask2);
+      svg.appendChild(background1);
+      svg.appendChild(background2);
+      svg.appendChild(background3);
+      svg.appendChild(background4);
+      svg.appendChild(score);
+      const msg = createMSG("Try to Get it Right stoping in B&W!");
+      svg.appendChild(msg);
+
+      document.addEventListener("mousemove", (ev) => {
+        mouseMove(ev), false;
+      });
+      document.addEventListener("click", (ev) => {
+        mouseClick(ev), false;
+      });
+    </script>
+  </body>
+</html>

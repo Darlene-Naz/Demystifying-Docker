@@ -1,0 +1,21 @@
+#lives {
+    /* transform: translate(0 100); */
+    transform-origin: 0 90px;
+}
+
+#label {}
+
+#curran-white-mask {
+    transform-origin: left top;
+    transition: transform 0s;
+}
+
+#curran-black-mask {
+    transform-origin: left top;
+    transition: transform 0s;
+}
+
+.bgs {
+    /* transition: visibility 0.3s gradient 300ms, opacity 300ms; */
+    @include transition( opacity 500ms linear, visibility 1s linear 500ms)
+}
